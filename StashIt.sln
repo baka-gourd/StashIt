@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35617.110
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StashIt", "StashIt\StashIt.csproj", "{A7E414F1-B70E-4023-B8F5-9CA2C2C4F443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StashIt.Daemon", "StashIt.Daemon\StashIt.Daemon.csproj", "{FCA70AF5-00D8-44E6-BD9F-A043BA089300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7E414F1-B70E-4023-B8F5-9CA2C2C4F443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E414F1-B70E-4023-B8F5-9CA2C2C4F443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E414F1-B70E-4023-B8F5-9CA2C2C4F443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E414F1-B70E-4023-B8F5-9CA2C2C4F443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA70AF5-00D8-44E6-BD9F-A043BA089300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA70AF5-00D8-44E6-BD9F-A043BA089300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA70AF5-00D8-44E6-BD9F-A043BA089300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA70AF5-00D8-44E6-BD9F-A043BA089300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D03CC2A-984B-4CB7-8086-2739C71CE774}
+	EndGlobalSection
+EndGlobal
