@@ -5,7 +5,7 @@
 		<TargetFramework>net472</TargetFramework>
 		<Configurations>Debug;Release</Configurations>
 		<LangVersion>13</LangVersion>
-    <Version>0.0.2</Version>
+    <Version>0.1.0</Version>
 		<!--The file where mod information which is required for publishing mod on PDX mods are stored-->
 		<PublishConfigurationPath>Properties\PublishConfiguration.xml</PublishConfigurationPath>
 	</PropertyGroup>
@@ -93,5 +93,11 @@
       <BuiltFiles Include="$(StashItDaemonOutputPath)\**\*.*" />
     </ItemGroup>
     <Copy SourceFiles="@(BuiltFiles)" DestinationFolder="$(OutputPath)" />
+  </Target>
+
+  <Target Name="SetupAttributes" BeforeTargets="BeforeBuild">
+    <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/Description.md))" Query="//LongDescription" />
+    <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/ChangeLog.md))" Query="//ChangeLog" />
+    <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
   </Target>
 </Project>

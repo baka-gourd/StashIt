@@ -1,35 +1,56 @@
 <Publish>
-	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
-	<ModId Value="100369" />
-	<!--Name of the mod to display to players-->
-	<DisplayName Value="Stash It" />
-	<!--Short description of the mod-->
-	<ShortDescription Value="Stash all logs automatically when close" />
-	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
-	<!--LongDescription Value="Stash all logs automatically when close" /-->
-	<LongDescription>
-Stash all logs automatically when close.
+  <!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
+  <ModId Value="100369" />
+  <!--Name of the mod to display to players-->
+  <DisplayName Value="Stash It" />
+  <!--Short description of the mod-->
+  <ShortDescription Value="Stash all logs automatically when close" />
+  <!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
+  <!--LongDescription Value="Stash all logs automatically when close" /-->
+  <LongDescription># Stash It
 
-Due to game limitations, only able to save logs on normal exit for archiving purposes.
-	</LongDescription>
-	<!--Thumbnail-->
-	<Thumbnail Value="Properties/Thumbnail.png" />
-	<!--Screenshot, can be set multiple times-->
-	<Screenshot Value="" />
-	<!--Tag, can be set multiple times-->
-	<Tag Value="" />
-	<!--Link to the forum post where the mod can be discussed-->
-	<ForumLink Value="" />
-	<!--Version of the mod-->
-	<ModVersion Value="0.0.2" />
-	<!--Recommended version of the base game to use the mod-->
-	<GameVersion Value="1.2.*" />
-	<!--Dependency for the mod, can be set multiple times-->
-	<Dependency Id="" />
-	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="hide all stash logs when load" />
-	<!--ChangeLog>
+"Stash It" is a lightweight and efficient tool designed to ensure your game logs are preserved and organized, even after your game exits unexpectedly. Whether you’re a developer debugging your game or a power user interested in reviewing detailed runtime behavior, Stash It keeps all the logs safe and accessible.
+
+## Features
+
+- Automatic Log Archiving: Automatically saves and compresses logs upon game exit, ensuring no critical information is lost.
+- Seamless Integration: Runs silently in the background with minimal performance overhead, integrating smoothly with your game's lifecycle.
+- Crash Resilience: Captures logs even during unexpected crashes, providing vital insights into game behavior at the moment of failure.
+
+Save directory: %AppData%\..\LocalLow\Colossal Order\Cities Skylines II\ModsData\.StashIt
+
+## How It Works
+
+When your game exits, Stash It scans predefined log directories, gathers relevant files, and compresses them into a timestamped archive. This ensures that every session's logs are securely stored for review, debugging, or archiving.
+
+## Who Is It For?
+
+- Game Developers: Simplifies debugging by preserving detailed runtime logs across sessions.
+- QA Testers: Ensures that no issue or crash report is missing critical data.
+- Power Users: Allows advanced players to review game logs and performance metrics for optimization or community reporting.</LongDescription>
+  <!--Thumbnail-->
+  <Thumbnail Value="Properties/Thumbnail.png" />
+  <!--Screenshot, can be set multiple times-->
+  <Screenshot Value="" />
+  <!--Tag, can be set multiple times-->
+  <Tag Value="" />
+  <!--Link to the forum post where the mod can be discussed-->
+  <ForumLink Value="" />
+  <!--Version of the mod-->
+  <ModVersion Value="0.1.0" />
+  <!--Recommended version of the base game to use the mod-->
+  <GameVersion Value="1.2.*" />
+  <!--Dependency for the mod, can be set multiple times-->
+  <Dependency Id="" />
+  <!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
+  <ChangeLog># 0.1.0
+
+## Feature
+
+- Use daemon to create zip, should handle all exit.</ChangeLog>
+  <!--ChangeLog>
 	</ChangeLog-->
-	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon, buymeacoffee, kofi, crowdin, gitlab-->
-	<ExternalLink Type="" Url="" />
+  <!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon, buymeacoffee, kofi, crowdin, gitlab-->
+  <ExternalLink Type="github" Url="https://github.com/baka-gourd/StashIt" />
+  <ExternalLink Type="patreon" Url="https://www.patreon.com/Nullpinter" />
 </Publish>
