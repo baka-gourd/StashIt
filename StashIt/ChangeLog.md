@@ -1,5 +1,3 @@
-# 0.1.0
+# 1.0.0
 
-## Feature
-
-- Use daemon to create zip, should handle all exit.
+- Support game 1.3.6

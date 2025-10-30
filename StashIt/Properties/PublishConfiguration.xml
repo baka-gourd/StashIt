@@ -37,17 +37,15 @@ When your game exits, Stash It scans predefined log directories, gathers relevan
   <!--Link to the forum post where the mod can be discussed-->
   <ForumLink Value="" />
   <!--Version of the mod-->
-  <ModVersion Value="0.1.0" />
+  <ModVersion Value="1.0.0-build2" />
   <!--Recommended version of the base game to use the mod-->
   <GameVersion Value="1.2.*" />
   <!--Dependency for the mod, can be set multiple times-->
   <Dependency Id="" />
   <!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-  <ChangeLog># 0.1.0
+  <ChangeLog># 1.0.0
 
-## Feature
-
-- Use daemon to create zip, should handle all exit.</ChangeLog>
+- Support game 1.3.6</ChangeLog>
   <!--ChangeLog>
 	</ChangeLog-->
   <!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon, buymeacoffee, kofi, crowdin, gitlab-->
